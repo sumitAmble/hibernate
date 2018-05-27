@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import softead.hibernate.dao.PlayerDao;
 import softead.hibernate.models.Player;
+import softead.hibernate.models.Team;
 
 @Service
 public class PlayerService {
@@ -30,6 +31,12 @@ public class PlayerService {
 			player = optionalPlayer.get();
 		}
 		return player;
+	}
+	
+	public List<Player> getPlayersByTeam(Team team){
+		List<Player> list = new ArrayList<>();
+		playerDao.findByTeam(team).forEach(list::add);
+		return list;
 	}
 	
 	public void removePlayer(int id) {

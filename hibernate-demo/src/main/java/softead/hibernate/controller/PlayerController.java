@@ -1,6 +1,5 @@
 package softead.hibernate.controller;
 
-import java.net.Authenticator.RequestorType;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,8 +10,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import softead.hibernate.models.Player;
+import softead.hibernate.models.Team;
 import softead.hibernate.service.PlayerService;
-import softead.hibernate.service.TeamService;
 
 @RestController
 @RequestMapping("/players")
@@ -44,4 +43,13 @@ public class PlayerController {
 	public void deletePlayer(@PathVariable("id") int id) {
 		playerService.removePlayer(id);
 	}
+	
+	//Get Player By Team
+		@RequestMapping(value ="/team", method=RequestMethod.GET)
+		public List<Player> deletePlayer(@RequestBody() Team team) {
+			System.out.println("Plyer by Teams : " + team);
+			return playerService.getPlayersByTeam(team);
+		}
+		
+	
 }

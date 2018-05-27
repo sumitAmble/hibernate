@@ -1,15 +1,3 @@
-/*create table team (
-	id integer not null,
-	team varchar,
-	primary key(id)
-);
-
-create table player (
-	id integer not null,
-	player_name varchar not null,
-	preference varchar not null,
-	primary key(id)
-);*/
 insert into team (id, team, description, owner, total_played, total_won, total_lost, no_result)
 values (1, 'RCB','Royal Challengers Bengaluru', 'United Spirits', 140, 98, 40, 2);
 insert into team (id, team, description, owner, total_played, total_won, total_lost, no_result)
@@ -20,20 +8,65 @@ insert into team (id, team, description, owner, total_played, total_won, total_l
 values (4, 'KXIP','Kings Eleven Punjab', 'Ness Wadia, Preity Zinta, Mohit Burman, Karan Paul', 140, 98, 40, 2);
 insert into team (id, team, description, owner, total_played, total_won, total_lost, no_result)
 values (5, 'KKR','Kolkatta Knight Riders', 'Shahrukh Khan (Red Chillies Entertainment) Juhi Chawla, Jay Mehta (Mehta Group)', 140, 98, 40, 2);
-/*insert into team (id, team, description, owner, total_played, total_won, total_lost, no_result)
+insert into team (id, team, description, owner, total_played, total_won, total_lost, no_result)
 values (6, 'MI','Mumbai Indians', 'Mukesh Ambani', 140, 98, 40, 2);
 insert into team (id, team, description, owner, total_played, total_won, total_lost, no_result)
 values (7, 'DD','Delhi Daredevils', 'GMR Group Pvt ltd', 140, 98, 40, 2);
 insert into team (id, team, description, owner, total_played, total_won, total_lost, no_result)
-values (8, 'SRH','Sunrisers Hyderabad', 'Kalanithi Maran', 140, 98, 40, 2);*/
+values (8, 'SRH','Sunrisers Hyderabad', 'Kalanithi Maran', 140, 98, 40, 2);
 
+insert into player (id, player_name, preference, match_played, runs, wickets, highest_score, 
+					best_wicket, fifties, centuries, thirties, catches, stumpings, fours, sixes, strike_rate, average, team_id)
+values (6, 'AB De Villiers', 'BAT',141, 3953, 0, 133, '0/0', 28, 3, 40, 87, 7, 326, 186, 150.93, 39.53, 1);
+insert into player (id, player_name, preference, match_played, runs, wickets, highest_score, 
+					best_wicket, fifties, centuries, thirties, catches, stumpings, fours, sixes, strike_rate, average, team_id)
+values (7, 'Virat Kohli', 'BAT',163, 4948, 4, 113, '2/25', 34, 4, 40, 69, 0, 434, 178, 130.75, 38.35, 1);
 
+insert into player (id, player_name, preference, match_played, runs, wickets, highest_score, 
+					best_wicket, fifties, centuries, thirties, catches, stumpings, fours, sixes, strike_rate, average, team_id)
+values (8, 'MS Dhoni', 'BAT',141, 3953, 0, 133, '0/0', 28, 3, 40, 87, 7, 326, 186, 150.93, 39.53, 2);
+insert into player (id, player_name, preference, match_played, runs, wickets, highest_score, 
+					best_wicket, fifties, centuries, thirties, catches, stumpings, fours, sixes, strike_rate, average, team_id)
+values (9, 'S Raina', 'BAT',163, 4948, 4, 113, '2/25', 34, 4, 40, 69, 0, 434, 178, 130.75, 38.35, 2);
 
-insert into player (id, player_name, preference, team_id)
-values (6, 'Vijay', 'BAT',1);
-insert into player (id, player_name, preference, team_id)
-values (7, 'Vinay', 'BOWL',2);
-insert into player (id, player_name, preference, team_id)
-values (8, 'Sumit', 'ALL RONDER',3);
-insert into player (id, player_name, preference, team_id)
-values (9, 'Aditya', 'BAT',4);
+insert into player (id, player_name, preference, match_played, runs, wickets, highest_score, 
+					best_wicket, fifties, centuries, thirties, catches, stumpings, fours, sixes, strike_rate, average, team_id)
+values (10, 'A Rahane', 'BAT',141, 3953, 0, 133, '0/0', 28, 3, 40, 87, 7, 326, 186, 150.93, 39.53, 3);
+insert into player (id, player_name, preference, match_played, runs, wickets, highest_score, 
+					best_wicket, fifties, centuries, thirties, catches, stumpings, fours, sixes, strike_rate, average, team_id)
+values (11, 'K Gowtham', 'BAT',163, 4948, 4, 113, '2/25', 34, 4, 40, 69, 0, 434, 178, 130.75, 38.35, 3);
+
+insert into player (id, player_name, preference, match_played, runs, wickets, highest_score, 
+					best_wicket, fifties, centuries, thirties, catches, stumpings, fours, sixes, strike_rate, average, team_id)
+values (12, 'C Gayle', 'BAT',141, 3953, 0, 133, '0/0', 28, 3, 40, 87, 7, 326, 186, 150.93, 39.53, 4);
+insert into player (id, player_name, preference, match_played, runs, wickets, highest_score, 
+					best_wicket, fifties, centuries, thirties, catches, stumpings, fours, sixes, strike_rate, average, team_id)
+values (13, 'KL Rahul', 'BAT',163, 4948, 4, 113, '2/25', 34, 4, 40, 69, 0, 434, 178, 130.75, 38.35, 4);
+
+insert into player (id, player_name, preference, match_played, runs, wickets, highest_score, 
+					best_wicket, fifties, centuries, thirties, catches, stumpings, fours, sixes, strike_rate, average, team_id)
+values (14, 'D Karthik', 'BAT',141, 3953, 0, 133, '0/0', 28, 3, 40, 87, 7, 326, 186, 150.93, 39.53, 5);
+insert into player (id, player_name, preference, match_played, runs, wickets, highest_score, 
+					best_wicket, fifties, centuries, thirties, catches, stumpings, fours, sixes, strike_rate, average, team_id)
+values (15, 'R Uttappa', 'BAT',163, 4948, 4, 113, '2/25', 34, 4, 40, 69, 0, 434, 178, 130.75, 38.35, 5);
+
+insert into player (id, player_name, preference, match_played, runs, wickets, highest_score, 
+					best_wicket, fifties, centuries, thirties, catches, stumpings, fours, sixes, strike_rate, average, team_id)
+values (16, 'R Sharma', 'BAT',141, 3953, 0, 133, '0/0', 28, 3, 40, 87, 7, 326, 186, 150.93, 39.53, 6);
+insert into player (id, player_name, preference, match_played, runs, wickets, highest_score, 
+					best_wicket, fifties, centuries, thirties, catches, stumpings, fours, sixes, strike_rate, average, team_id)
+values (17, 'J Bumrah', 'BOWL',163, 4948, 4, 113, '2/25', 34, 4, 40, 69, 0, 434, 178, 130.75, 38.35, 6);
+
+insert into player (id, player_name, preference, match_played, runs, wickets, highest_score, 
+					best_wicket, fifties, centuries, thirties, catches, stumpings, fours, sixes, strike_rate, average)
+values (18, 'Vijay K', 'BOWL',163, 4948, 4, 113, '2/25', 34, 4, 40, 69, 0, 434, 178, 130.75, 38.35);
+insert into player (id, player_name, preference, match_played, runs, wickets, highest_score, 
+					best_wicket, fifties, centuries, thirties, catches, stumpings, fours, sixes, strike_rate, average)
+values (19, 'Bhushan D', 'BOWL',163, 4948, 4, 113, '2/25', 34, 4, 40, 69, 0, 434, 178, 130.75, 38.35);
+insert into player (id, player_name, preference, match_played, runs, wickets, highest_score, 
+					best_wicket, fifties, centuries, thirties, catches, stumpings, fours, sixes, strike_rate, average)
+values (20, 'Ishwar P', 'BAT',163, 4948, 4, 113, '2/25', 34, 4, 40, 69, 0, 434, 178, 130.75, 38.35);
+insert into player (id, player_name, preference, match_played, runs, wickets, highest_score, 
+					best_wicket, fifties, centuries, thirties, catches, stumpings, fours, sixes, strike_rate, average)
+values (21, 'Sumit A', 'BAT',163, 4948, 4, 113, '2/25', 34, 4, 40, 69, 0, 434, 178, 130.75, 38.35);
+
